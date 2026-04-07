@@ -1,0 +1,331 @@
+.app-shell {
+  width: min(1380px, 100% - 24px);
+  margin: 24px auto 40px;
+  display: grid;
+  gap: 14px;
+}
+
+.hero-panel {
+  background:
+    radial-gradient(circle at 85% 20%, rgba(255, 170, 70, 0.2), transparent 38%),
+    radial-gradient(circle at 15% 10%, rgba(36, 130, 255, 0.22), transparent 40%),
+    linear-gradient(160deg, #ffffff 0%, #f4f8ff 56%, #f0f7f4 100%);
+  border: 1px solid #d4e0f2;
+  border-radius: 16px;
+  padding: 18px;
+  box-shadow: 0 10px 28px rgba(20, 36, 65, 0.08);
+}
+
+.eyebrow {
+  margin: 0;
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #1d64cc;
+  font-weight: 700;
+}
+
+.hero-panel h1 {
+  margin: 6px 0 8px;
+  font-size: clamp(1.45rem, 2.7vw, 2rem);
+  line-height: 1.16;
+  color: #10244a;
+}
+
+.subtitle {
+  margin: 0;
+  max-width: 92ch;
+  color: #34507d;
+  font-size: 0.92rem;
+}
+
+.panel {
+  background: #ffffff;
+  border: 1px solid #d9e2ef;
+  border-radius: 14px;
+  padding: 12px;
+  box-shadow: 0 8px 18px rgba(16, 36, 74, 0.06);
+}
+
+.panel h2 {
+  margin: 0 0 8px;
+  color: #123366;
+  font-size: 1.02rem;
+}
+
+.route-form {
+  display: grid;
+  gap: 8px;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) auto;
+  align-items: end;
+}
+
+.route-form label {
+  display: grid;
+  gap: 4px;
+  color: #243e67;
+  font-weight: 600;
+  font-size: 0.86rem;
+}
+
+.route-form input {
+  border: 1px solid #b8cae4;
+  border-radius: 9px;
+  padding: 8px 10px;
+  font-size: 0.9rem;
+  color: #0f2a55;
+  background: #fdfefe;
+}
+
+.route-form input:focus {
+  outline: 2px solid rgba(31, 115, 240, 0.2);
+  border-color: #3d7fdf;
+}
+
+.route-form button {
+  width: fit-content;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 999px;
+  background: linear-gradient(110deg, #1f73f0, #007f66);
+  color: #ffffff;
+  font-size: 0.86rem;
+  font-weight: 700;
+  cursor: pointer;
+  height: 37px;
+}
+
+.route-form button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.summary {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.summary div {
+  border: 1px solid #d6e4f8;
+  border-radius: 10px;
+  padding: 7px 8px;
+  background: linear-gradient(145deg, #fbfdff, #f0f6ff);
+}
+
+.summary span {
+  display: block;
+  font-size: 0.72rem;
+  color: #3564a7;
+}
+
+.summary strong {
+  font-size: 0.92rem;
+  color: #0f2a55;
+}
+
+.error-banner {
+  margin-top: 8px;
+  padding: 8px 10px;
+  background: #ffeef0;
+  border: 1px solid #ffbec7;
+  color: #8b1c2d;
+  border-radius: 10px;
+  font-size: 0.85rem;
+}
+
+.table-wrap {
+  overflow: visible;
+  border: 1px solid #c9d8ee;
+  border-radius: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+thead th {
+  background: #f0f5ff;
+  color: #1d3f73;
+  text-align: left;
+  border-bottom: 1px solid #bfd0ea;
+  padding: 6px 8px;
+  font-size: 0.8rem;
+}
+
+tbody td {
+  border-bottom: 1px solid #e2ebf8;
+  padding: 5px 8px;
+  color: #1a355f;
+  font-size: 0.76rem;
+  line-height: 1.2;
+  vertical-align: top;
+  overflow-wrap: anywhere;
+}
+
+tbody tr:nth-child(even) {
+  background: #fafcff;
+}
+
+.empty-cell {
+  text-align: center;
+  color: #4f6994;
+  padding: 12px;
+}
+
+.tables-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  align-items: start;
+}
+
+.tables-grid .panel {
+  height: 100%;
+}
+
+.toolbar {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.toolbar p {
+  margin: 0;
+  font-size: 0.8rem;
+  color: #365b8f;
+}
+
+.secondary-btn {
+  border: 1px solid #9ab4da;
+  background: #f5f9ff;
+  color: #14396f;
+  border-radius: 999px;
+  padding: 6px 12px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.screenshot-mode {
+  width: min(1600px, 100% - 16px);
+  margin-top: 10px;
+  margin-bottom: 16px;
+  gap: 8px;
+}
+
+.screenshot-mode .hero-panel {
+  padding: 12px;
+}
+
+.screenshot-mode .hero-panel h1 {
+  font-size: 1.35rem;
+  margin: 4px 0 6px;
+}
+
+.screenshot-mode .subtitle {
+  font-size: 0.8rem;
+}
+
+.screenshot-mode .toolbar p {
+  font-size: 0.74rem;
+}
+
+.screenshot-mode .panel {
+  padding: 8px;
+}
+
+.screenshot-mode .panel h2 {
+  font-size: 0.92rem;
+  margin-bottom: 6px;
+}
+
+.screenshot-mode .route-form {
+  gap: 6px;
+}
+
+.screenshot-mode .route-form input {
+  padding: 6px 8px;
+  font-size: 0.82rem;
+}
+
+.screenshot-mode .route-form button,
+.screenshot-mode .secondary-btn {
+  padding: 6px 10px;
+  height: auto;
+  font-size: 0.75rem;
+}
+
+.screenshot-mode .summary {
+  margin-top: 8px;
+  gap: 6px;
+}
+
+.screenshot-mode .summary div {
+  padding: 6px;
+}
+
+.screenshot-mode .summary span {
+  font-size: 0.66rem;
+}
+
+.screenshot-mode .summary strong {
+  font-size: 0.82rem;
+}
+
+.screenshot-mode .table-wrap {
+  border-radius: 8px;
+}
+
+.screenshot-mode thead th {
+  padding: 4px 6px;
+  font-size: 0.72rem;
+}
+
+.screenshot-mode tbody td {
+  padding: 4px 6px;
+  font-size: 0.66rem;
+  line-height: 1.12;
+}
+
+@media (max-width: 900px) {
+  .app-shell {
+    width: calc(100% - 20px);
+    margin: 12px auto 24px;
+    gap: 12px;
+  }
+
+  .route-form {
+    grid-template-columns: 1fr;
+  }
+
+  .route-form button {
+    width: 100%;
+  }
+
+  .tables-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-panel,
+  .panel {
+    padding: 14px;
+  }
+
+  .summary {
+    grid-template-columns: 1fr;
+  }
+
+  .panel h2 {
+    font-size: 1.06rem;
+  }
+
+  .screenshot-mode {
+    width: calc(100% - 10px);
+  }
+}

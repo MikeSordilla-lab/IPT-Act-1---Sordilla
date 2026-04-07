@@ -1,0 +1,37 @@
+- main [ref=e3]:
+  - generic [ref=e4]:
+    - paragraph [ref=e5]: MapQuest API Integration
+    - heading "Route Planner Dashboard" [level=1] [ref=e6]
+    - paragraph [ref=e7]: Enter a starting location and destination to request route data, then review every request input and API output in table format.
+  - generic [ref=e8]:
+    - heading "Route Request Form" [level=2] [ref=e9]
+    - generic [ref=e10]:
+      - generic [ref=e11]:
+        - text: Starting Location
+        - textbox "Starting Location" [ref=e12]:
+          - /placeholder: e.g., Manila, PH
+      - generic [ref=e13]:
+        - text: Destination
+        - textbox "Destination" [ref=e14]:
+          - /placeholder: e.g., Quezon City, PH
+      - button "Get Route" [ref=e15] [cursor=pointer]
+  - generic [ref=e16]:
+    - heading "API Request Inputs (Table)" [level=2] [ref=e17]
+    - table [ref=e19]:
+      - rowgroup [ref=e20]:
+        - row "Input Field Value" [ref=e21]:
+          - columnheader "Input Field" [ref=e22]
+          - columnheader "Value" [ref=e23]
+      - rowgroup [ref=e24]:
+        - row "Submit the form to show request inputs." [ref=e25]:
+          - cell "Submit the form to show request inputs." [ref=e26]
+  - generic [ref=e27]:
+    - heading "API Response Outputs (Table)" [level=2] [ref=e28]
+    - table [ref=e30]:
+      - rowgroup [ref=e31]:
+        - row "Output Field Value" [ref=e32]:
+          - columnheader "Output Field" [ref=e33]
+          - columnheader "Value" [ref=e34]
+      - rowgroup [ref=e35]:
+        - row "API response fields will appear here after a request." [ref=e36]:
+          - cell "API response fields will appear here after a request." [ref=e37]
